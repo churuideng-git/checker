@@ -25,3 +25,8 @@ class StudentAI():
         move = moves[index][inner_index]
         self.board.make_move(move,self.color)
         return move
+
+    class Node:
+        def __init__(self):
+            self.w = 0
+            self.s = 0

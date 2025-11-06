@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.5 (Checkers_Student)" project-jdk-type="Python SDK" />
+  <component name="Black">
+    <option name="sdkName" value="Remote Python 3.10.12 (sftp://laywc@openlab.ics.uci.edu:22/home/laywc/.virtualenvs/Checkers_Student/bin/python)" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Remote Python 3.10.12 (sftp://laywc@openlab.ics.uci.edu:22/home/laywc/.virtualenvs/Checkers_Student/bin/python)" project-jdk-type="Python SDK" />
 </project>
