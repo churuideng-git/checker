@@ -66,13 +66,15 @@ class StudentAI():
         return util
 
     def util_back_row(self, move: Move) -> int:
+        back_row = 0 if self.color == 1 else self.row - 1
         start_row = move[0][0]
-        return -2 * self.row if start_row == 0 else 0
+        return -2 * self.row if start_row == back_row else 0
 
     def util_king(self, move: Move) -> int:
+        king_row = self.row - 1 if self.color == 1 else 0
         final_row: int = move[-1][0]
         final_col: int = move[-1][1]
-        return self.row if final_row == self.row - 1 and not self.board.board[final_row][final_col].is_king else 0
+        return self.row if final_row == king_row and not self.board.board[final_row][final_col].is_king else 0
 
     def util_towards_center(self, move: Move) -> int:
         final_col: int = move[-1][1]

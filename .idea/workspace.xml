@@ -39,6 +39,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.AI_Runner P2.executor": "Run",
     "Python.AI_Runner.executor": "Run",
     "Python.StudentAI.executor": "Debug",
     "Python.main (1).executor": "Run",
@@ -64,7 +65,31 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Python.AI_Runner">
+  <component name="RunManager" selected="Python.AI_Runner P2">
+    <configuration name="AI_Runner P2" type="PythonConfigurationType" factoryName="Python">
+      <module name="Checkers_Student" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Remote Python 3.10.12 (sftp://laywc@openlab.ics.uci.edu:22/home/laywc/.virtualenvs/Checkers_Student/bin/python) (2)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tools" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tools/AI_Runner.py" />
+      <option name="PARAMETERS" value="&quot;7&quot; &quot;7&quot; &quot;2&quot; &quot;l&quot; &quot;Sample_AIs/Random_AI/main.py&quot; &quot;../src/checkers-python/main.py&quot;" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="AI_Runner" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Checkers_Student" />
       <option name="ENV_FILES" value="" />
@@ -112,6 +137,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.AI_Runner P2" />
       <item itemvalue="Python.AI_Runner" />
       <item itemvalue="Python.main" />
     </list>
@@ -141,7 +167,7 @@
       <workItem from="1762468290239" duration="2795000" />
       <workItem from="1762580054000" duration="4564000" />
       <workItem from="1762587017892" duration="5303000" />
-      <workItem from="1762641807933" duration="10410000" />
+      <workItem from="1762641807933" duration="12184000" />
     </task>
     <task id="LOCAL-00001" summary="added node class (for future)">
       <option name="closed" value="true" />
@@ -167,7 +193,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762642020139</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="rewrote and fixed heuristics">
+      <option name="closed" value="true" />
+      <created>1762654135940</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1762654135940</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,7 +221,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added node class (for future)" />
     <MESSAGE value="added first draft of simple heuristics for random AI" />
-    <option name="LAST_COMMIT_MESSAGE" value="added first draft of simple heuristics for random AI" />
+    <MESSAGE value="rewrote and fixed heuristics" />
+    <option name="LAST_COMMIT_MESSAGE" value="rewrote and fixed heuristics" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -197,8 +232,9 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Checkers_Student$AI_Runner.coverage" NAME="AI_Runner Coverage Results" MODIFIED="1762654024400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tools" />
-    <SUITE FILE_PATH="coverage/Checkers_Student$main.coverage" NAME="main Coverage Results" MODIFIED="1762653726861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/checkers-python" />
+    <SUITE FILE_PATH="coverage/Checkers_Student$AI_Runner_P2.coverage" NAME="AI_Runner P2 Coverage Results" MODIFIED="1762656626108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tools" />
+    <SUITE FILE_PATH="coverage/Checkers_Student$AI_Runner.coverage" NAME="AI_Runner Coverage Results" MODIFIED="1762656424550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tools" />
+    <SUITE FILE_PATH="coverage/Checkers_Student$main.coverage" NAME="main Coverage Results" MODIFIED="1762656295559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/checkers-python" />
     <SUITE FILE_PATH="coverage/Checkers_Student$StudentAI.coverage" NAME="StudentAI Coverage Results" MODIFIED="1762650656115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/checkers-python" />
     <SUITE FILE_PATH="coverage/Checkers_Student$main__1_.coverage" NAME="main_vs_random Coverage Results" MODIFIED="1762468982720" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tools/Sample_AIs/Random_AI" />
   </component>

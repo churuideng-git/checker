@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="laywc@openlab.ics.uci.edu:22 password (6)" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" autoUpload="Always" serverName="laywc@openlab.ics.uci.edu:22 password (7)" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
       <paths name="laywc@openlab.ics.uci.edu:22 password">
         <serverdata>
@@ -41,6 +41,13 @@
         <serverdata>
           <mappings>
             <mapping deploy="/tmp/pycharm_project_232" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="laywc@openlab.ics.uci.edu:22 password (7)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_816" local="$PROJECT_DIR$" />
           </mappings>
         </serverdata>
       </paths>
