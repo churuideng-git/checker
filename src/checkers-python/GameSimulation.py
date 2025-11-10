@@ -52,25 +52,25 @@ class GameSimulation:
 
 if __name__=="__main__":
     simulation = GameSimulation(StudentAI, AI)
-    results = simulation.simulate(col=8, row=8, p=3, num_games=10, alternate_starts=True, quiet=True)
-
-    p1_stats = GameStatistics(
-        player="Player 1",
-        num_games=results["num_games"],
-        num_wins=results["p1_wins"],
-        num_draws=results["ties"],
-    )
-    p2_stats = GameStatistics(
-        player="Player 2",
-        num_games=results["num_games"],
-        num_wins=results["p2_wins"],
-        num_draws=results["ties"],
-    )
+    results = simulation.simulate(col=8, row=8, p=3, num_games=40, alternate_starts=True, quiet=True)
 
     total = results["num_games"]
     draws = results["ties"]
     p1_losses = results["p2_wins"]
     p2_losses = results["p1_wins"]
+
+    p1_stats = GameStatistics(
+        player="Player 1",
+        num_games=total,
+        num_wins=results["p1_wins"],
+        num_draws=results["ties"],
+    )
+    p2_stats = GameStatistics(
+        player="Player 2",
+        num_games=total,
+        num_wins=results["p2_wins"],
+        num_draws=results["ties"],
+    )
 
     print("\n==== Simulation Results ====")
     print(f"Games: {total}")
