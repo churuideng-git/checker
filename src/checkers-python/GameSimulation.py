@@ -1,7 +1,7 @@
 from GameLogic import GameLogic
 from StudentAI import StudentAI
 from AI_Extensions.RandomAI import StudentAI as AI
-from Statistics.GameStatistics import GameStatistics
+from GameStatistics import GameStatistics
 
 def get_player_turns(player, opponent, match_no, alternate_starts=True) -> tuple:
     if match_no % 2 == 1 and alternate_starts:
