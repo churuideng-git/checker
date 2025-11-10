@@ -1,0 +1,69 @@
+#include "StudentAI.h"
+#include <random>
+#include <cmath>
+#include <vector>
+
+//The following part should be completed by students.
+//The students can modify anything except the class name and exisiting functions and varibles.
+StudentAI::StudentAI(int col,int row,int p)
+	:AI(col, row, p)
+{
+    board = Board(col,row,p);
+    board.initializeGame();
+    player = 2;
+}
+
+
+Move StudentAI::GetMove(Move move)
+{
+    if (move.seq.empty())
+    {
+        player = 1;
+    } else{
+        board.makeMove(move,player == 1?2:1);
+    }
+    vector<vector<Move> > moves = board.getAllPossibleMoves(player);
+    
+    //score system
+    int maxScore=-32766;
+    unsigned arg1=0;
+    unsigned arg2=0;
+    unsigned tempScore=0;
+    for(unsigned i=0; i<moves.size();i++){
+        for(unsigned j=0; j<moves[i].size();j++){
+            // analyze each move score
+            tempScore=0;
+            vector<Position> tempPos=(moves[i][j]).seq;
+            unsigned tempSize=(moves[i][j]).seq.size();
+            Position finalPosition=tempPos.at(tempSize-1);
+
+            // Case1: how many total capture by this single move(+20 for each)
+            tempScore=tempScore+(tempSize-1)*20;
+
+            // Case2: not suicide the checker by this move(If suicide -20)
+
+            // Case3: There is teammate behind(+5)
+            
+            // Case4: Control Center(score -= distance_to_center/row * 10)
+            tempScore=tempScore-(abs(ceil(row/2)-finalPosition.x)+abs(ceil(col/2)-finalPosition.y))/row*10;
+
+            // Case5: Upgrade to King (Use isKing function +10)
+
+            // Update Score
+            if(tempScore>maxScore){
+                maxScore=tempScore;
+                arg1=i;
+                arg2=j;
+            }
+        }
+    }
+    //
+
+    vector<Move> checker_moves = moves[arg1];
+    Move res = checker_moves[arg2];
+    board.makeMove(res,player);
+    return res;
+
+
+}
+
